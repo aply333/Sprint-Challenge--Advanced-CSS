@@ -63,21 +63,33 @@
 
       .btn {
         background-color: @btn-bg-color;
-        width: 100px;
-        height: 25px;
-        text-align: center;
+        width: 120px;
+        height: 30px;
         border-radius:5px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        .btn-align();
+
+        &:hover {
+          background-color: darken(@btn-bg-color, 10%);
+        }
         a{
           .clean-link(); 
-          font-size: @nav-font-a;
           color: @wild-sand;
         }
       }
     }
+    .lilrocket{
+      // display: none;
+      position: relative;
+      bottom:0px;
+      left: 0px;
+      transition: all 1.5s ease-in ;
+      &:hover{
+        bottom:1000px;
+        left:200px;
+        transform:rotate(25deg);
 
+      }
+    }
     .walk-img {
       width: 46%;
       margin-left: 4%;

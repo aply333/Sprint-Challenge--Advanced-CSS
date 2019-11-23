@@ -3,7 +3,24 @@
 }
 .clean-link {
   text-decoration: none;
-  color: #5E6164;
+  font-size: 1.5rem;
+}
+.btn-align {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.darker-btn {
+  background-color: #000000;
+}
+@keyframes slideUp {
+  from {
+    bottom: -100%;
+  }
+  to {
+    top: -100%;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -254,19 +271,32 @@ footer {
 }
 .home .walk .walk-text .btn {
   background-color: #22283A;
-  width: 100px;
-  height: 25px;
-  text-align: center;
+  width: 120px;
+  height: 30px;
   border-radius: 5px;
+  text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #0f121a;
+}
 .home .walk .walk-text .btn a {
   text-decoration: none;
-  color: #5E6164;
   font-size: 1.5rem;
   color: #F6F6F6;
+}
+.home .walk .lilrocket {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  transition: all 1.5s ease-in;
+}
+.home .walk .lilrocket:hover {
+  bottom: 1000px;
+  left: 200px;
+  transform: rotate(25deg);
 }
 .home .walk .walk-img {
   width: 46%;

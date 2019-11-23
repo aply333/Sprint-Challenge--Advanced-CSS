@@ -4,5 +4,19 @@
 }
 .clean-link{
     text-decoration: none;
-    color:@main-font-color;
+    font-size: @nav-font-a;
+}
+.btn-align{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.darker-btn{
+    background-color: darken(black,10%)
+}
+
+@keyframes slideUp{
+    from{ bottom: -100%;}
+    to{ top: -100%;}
 }
