@@ -16,6 +16,17 @@
     background-color: darken(black,10%)
 }
 
+.nav-links(@fontcolor,@fontsize,@decor){
+    color: @fontcolor;
+    font-size: @fontsize;
+    text-decoration: @decor;
+}
+ 
+.images-layout(@flex-w, @width-i){
+    display: flex;
+    flex-wrap:@flex-w;
+    width:@width-i;
+}
 @keyframes slideUp{
     from{ bottom: -100%;}
     to{ top: -100%;}
