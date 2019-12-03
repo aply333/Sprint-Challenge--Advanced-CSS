@@ -232,7 +232,13 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
-.home .space-images .images-layout(wrap, 100%) img {
+.home .space-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
